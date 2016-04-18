@@ -1,25 +1,40 @@
 {
-    "name": "outeredge/swagger-module",
-	"description": "Zend Framework 2 Module for Swagger resource file generation",
-	"type": "library",
-	"license": "Apache-2.0",
-	"homepage": "https://github.com/outeredge/SwaggerModule",	
-	"keywords": [
-		"api",
-        	"rest",
-		"zf2",
-        	"swagger"
-	],
-    "require": {
-		"php": ">=5.3.3",
-		"zircote/swagger-php": "~2.0"
+  "name": "outeredge/swagger-module",
+  "description": "Zend Framework 2 Module for Swagger resource file generation",
+  "type": "library",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/outeredge/SwaggerModule",
+  "keywords": [
+    "api",
+    "rest",
+    "zf2",
+    "swagger"
+  ],
+  "repositories": {
+    "swagger-php": {
+      "type": "package",
+      "package": {
+        "name": "swagger-php",
+        "version": "2.0",
+        "source": {
+          "url": "https://github.com/FormaevaDev/swagger-php.git",
+          "type": "git",
+          "reference": "a51f62c"
+        }
+      }
+    }
+  },
+  "require": {
+    "php": ">=5.3.3",
+    "swagger-php": "2.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "SwaggerModule": "src/",
+      "swagger-ph": "vendor/swagger-php/src"
     },
-	"autoload": {
-		"psr-0": {
-			"SwaggerModule": "src/"
-        },
-		"classmap": [
-			"./"
-		]
-	}
+    "classmap": [
+      "./"
+    ]
+  }
 }
