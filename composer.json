@@ -30,8 +30,7 @@
   },
   "autoload": {
     "psr-0": {
-      "SwaggerModule": "src/",
-      "swagger-php": "vendor/swagger-php/src"
+      "SwaggerModule": "src/"
     },
     "classmap": [
       "./"
