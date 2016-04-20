@@ -15,18 +15,18 @@
       "type": "package",
       "package": {
         "name": "swagger-php",
-        "version": "2.0",
+        "version": "2.1",
         "source": {
           "url": "https://github.com/FormaevaDev/swagger-php.git",
           "type": "git",
-          "reference": "a51f62c"
+          "reference": "3cf9e34"
         }
       }
     }
   },
   "require": {
     "php": ">=5.3.3",
-    "swagger-php": "2.0"
+    "swagger-php": "2.1"
   },
   "autoload": {
     "psr-0": {
